@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Created by ipusic on 5/16/16.
  */
-public class PickerBrowswerPackage implements ReactPackage {
+public class PickerBrowserModule implements ReactPackage {
 
     // Deprecated RN 0.47
     public List<Class<? extends JavaScriptModule>> createJSModules() {
