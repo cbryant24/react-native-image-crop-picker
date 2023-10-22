@@ -1,12 +1,12 @@
 import React from 'react';
 
-import {NativeModules} from 'react-native';
+import { NativeModules } from 'react-native';
 
-const ImageCropPicker = NativeModules.ImageCropPicker;
+const ImageCropBrowserPicker = NativeModules.ImageBrowserCropPicker;
 
-export default ImageCropPicker;
-export const openPicker = ImageCropPicker.openPicker;
-export const openCamera = ImageCropPicker.openCamera;
-export const openCropper = ImageCropPicker.openCropper;
-export const clean = ImageCropPicker.clean;
-export const cleanSingle = ImageCropPicker.cleanSingle;
+export default ImageBrowserCropPicker;
+export const openPicker = ImageBrowserCropPicker.openPicker;
+export const openCamera = ImageBrowserCropPicker.openCamera;
+export const openCropper = ImageBrowserCropPicker.openCropper;
+export const clean = ImageBrowserCropPicker.clean;
+export const cleanSingle = ImageBrowserCropPicker.cleanSingle;
