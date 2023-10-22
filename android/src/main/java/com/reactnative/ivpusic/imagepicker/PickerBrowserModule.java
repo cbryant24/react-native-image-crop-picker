@@ -106,7 +106,7 @@ class PickerBrowserModule extends ReactContextBaseJavaModule implements Activity
     private Compression compression = new Compression();
     private ReactApplicationContext reactContext;
 
-    PickerModule(ReactApplicationContext reactContext) {
+    PickerBrowserModule(ReactApplicationContext reactContext) {
         super(reactContext);
         reactContext.addActivityEventListener(this);
         this.reactContext = reactContext;
@@ -162,7 +162,7 @@ class PickerBrowserModule extends ReactContextBaseJavaModule implements Activity
     public void clean(final Promise promise) {
 
         final Activity activity = getCurrentActivity();
-        final PickerModule module = this;
+        final PickerBrowserModule module = this;
 
         if (activity == null) {
             promise.reject(E_ACTIVITY_DOES_NOT_EXIST, "Activity doesn't exist");
@@ -196,7 +196,7 @@ class PickerBrowserModule extends ReactContextBaseJavaModule implements Activity
         }
 
         final Activity activity = getCurrentActivity();
-        final PickerModule module = this;
+        final PickerBrowserModule module = this;
 
         if (activity == null) {
             promise.reject(E_ACTIVITY_DOES_NOT_EXIST, "Activity doesn't exist");
@@ -841,7 +841,7 @@ class PickerBrowserModule extends ReactContextBaseJavaModule implements Activity
                     WritableMap result = getSelection(activity, resultUri, false);
 
                     if (result != null) {
-                        result.putMap("cropRect", PickerModule.getCroppedRectMap(data));
+                        result.putMap("cropRect", PickerBrowserModule.getCroppedRectMap(data));
 
                         resultCollector.setWaitCount(1);
                         resultCollector.notifySuccess(result);
