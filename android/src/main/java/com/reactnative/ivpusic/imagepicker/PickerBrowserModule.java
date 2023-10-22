@@ -54,7 +54,7 @@ import java.util.concurrent.Callable;
 
 
 
-class PickerModule extends ReactContextBaseJavaModule implements ActivityEventListener {
+class PickerBrowserModule extends ReactContextBaseJavaModule implements ActivityEventListener {
 
     private static final int IMAGE_PICKER_REQUEST = 61110;
     private static final int CAMERA_PICKER_REQUEST = 61111;

@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Created by ipusic on 5/16/16.
  */
-public class PickerPackage implements ReactPackage {
+public class PickerBrowswerPackage implements ReactPackage {
 
     // Deprecated RN 0.47
     public List<Class<? extends JavaScriptModule>> createJSModules() {
@@ -28,7 +28,7 @@ public class PickerPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-        modules.add(new PickerModule(reactContext));
+        modules.add(new PickerBrowserModule(reactContext));
 
         return modules;
     }
