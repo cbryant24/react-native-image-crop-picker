@@ -121,7 +121,7 @@ class PickerBrowserModule extends ReactContextBaseJavaModule implements Activity
 
     @Override
     public String getName() {
-        return "ImageCropPicker";
+        return "ImageBrowserCropPicker";
     }
 
     private void setConfiguration(final ReadableMap options) {
